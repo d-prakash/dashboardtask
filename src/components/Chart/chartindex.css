@@ -1,0 +1,21 @@
+
+.circular-bar{
+    height: 120px;
+    width: 100px;
+    margin-right: 15px;
+    
+}
+.bar-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+.progressbar-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.income-container{
+    display: flex;
+}

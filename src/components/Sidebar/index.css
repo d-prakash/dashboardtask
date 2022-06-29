@@ -1,0 +1,39 @@
+.app-container{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin-left: 10px;
+    background-color: aliceblue;
+
+}
+
+.icons-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+
+}
+
+.butterflyImg{
+    height: 30px;
+    width: 25px;
+    margin-bottom: 10px;
+}
+.person-image{
+    height: 100px;
+    width: 100px;
+}
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    margin-left: 10px;
+}
+.home{
+    background: transparent;
+    color: blue;
+}
