@@ -5,9 +5,9 @@ import { FaAddressCard } from "react-icons/fa";
 import 'react-circular-progressbar/dist/styles.css';
 import { FaCaretDown } from "react-icons/fa";
 import { BarChart, Bar, XAxis, YAxis,
-	CartesianGrid } from 'recharts';
+	CartesianGrid,ResponsiveContainer } from 'recharts';
 
-import './chartindex.css'
+import './index.css'
 
 const Chart = () => {
 
@@ -43,38 +43,19 @@ const Chart = () => {
 		<div className='d-flex flex-column top-container'>
 			<p style={{fontSize:"12px",fontWeight:500,color:'blue'}}>Retirement Income</p>
 			<p style={{fontSize:"20px",fontWeight:500}}>Starting Year 2056</p>
-			<div className='d-flex flex-row mr-2 '>
-				<div className='d-none d-lg-block'>
+			<div className='income-details-container'>
+				<div className='mr-4'>
 					<p className='amount' style={{fontSize:"25px"}}>$300,000</p>
 					<p>My Goal</p>
 					<hr className='horizontal-line'/>
 				</div>
-				<div className='d-flex flex-row ml-5'>
-					<div className='d-none d-lg-block'>
+				<div className='income-container'>
+					<div className='mr-4'>
 						<p className='amount'style={{fontSize:"25px"}}>59%</p>
 						<p>Goal Achieved</p>
 						<hr className='horizontal-line'/>
 					</div>
-					<div className='ml-5 d-none d-lg-block'>
-						<p className='amount' style={{fontSize:"25px"}}>$300</p>
-						<p>Est. Monthly Income</p>
-						<hr className='horizontal-line'/>
-					</div>
-				</div>
-			</div>
-			<div className='d-flex flex-column'>
-				<div className='d-lg-none'>
-					<p className='amount' style={{fontSize:"25px"}}>$300,000</p>
-					<p>My Goal</p>
-					<hr className='horizontal-line'/>
-				</div>
-				<div className='d-flex flex-row'>
-					<div className='d-lg-none'>
-						<p className='amount'style={{fontSize:"25px"}}>59%</p>
-						<p>Goal Achieved</p>
-						<hr className='horizontal-line'/>
-					</div>
-					<div className='d-lg-none'>
+					<div className='ml-4'>
 						<p className='amount' style={{fontSize:"25px"}}>$300</p>
 						<p>Est. Monthly Income</p>
 						<hr className='horizontal-line'/>
@@ -120,8 +101,9 @@ const Chart = () => {
 					<Bar dataKey="z" stackId="a" fill="#7eb6d9" />
 				</BarChart>
 			</div>
-			<div className='d-lg-none'>
-				<BarChart width={350} height={200} data={updatedData} >
+			<div className='d-lg-none text-center'>
+			<ResponsiveContainer width={220} height={170}>
+				<BarChart  data={updatedData} >
 				<CartesianGrid />
 					<XAxis dataKey="name" />
 					<YAxis  />
@@ -129,6 +111,7 @@ const Chart = () => {
 					<Bar dataKey="y" stackId="a" fill="#4d44b7" />
 					<Bar dataKey="z" stackId="a" fill="#7eb6d9" />
 				</BarChart>
+			</ResponsiveContainer>
 			</div>
 			
 		</div>
@@ -158,13 +141,15 @@ const Chart = () => {
 		</div>
 		
 		</div>
-		<div className="mobile-icons-container" >
-                    <div className='mobile-home-icon'><BsFillHouseFill size={25}/></div>
-                    <div className='mobile-icon'><BsCardList size={25}/></div>
-                    <div className='mobile-icon'><FaAddressCard size={25}/></div>
-                    <div className='mobile-icon'><BsFillPersonFill size={25}/></div>  
-                    <div className='mobile-icon'><BsSearch size={25}/></div>
-                </div>
+		<div className='d-lg-none'>
+			<div className="mobile-icons-container" >
+						<div className='mobile-home-icon'><BsFillHouseFill size={25}/></div>
+						<div className='mobile-icon'><BsCardList size={25}/></div>
+						<div className='mobile-icon'><FaAddressCard size={25}/></div>
+						<div className='mobile-icon'><BsFillPersonFill size={25}/></div>  
+						<div className='mobile-icon'><BsSearch size={25}/></div>
+					</div>
+			</div>
 		</div>
 		
 		</>

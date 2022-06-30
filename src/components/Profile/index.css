@@ -2,12 +2,8 @@
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-size: cover;
     height: 100vh;
-    padding: 10px;
-    width: 45vh;
-
+    width: 22vw;
 }
 
 .bio-section{
@@ -106,7 +102,7 @@ button{
     padding-left: 15px;
 }
 .mobile-icon{
-    margin-right: 25px;
+    margin-right: 15px;
 }
 .mobile-home-icon{
     margin-right: 22px;
@@ -122,4 +118,30 @@ button{
 .mobile-button{
     width: 200px;
     margin-left: 10px;
+}
+
+
+@media only screen and (min-width: 767px) {  
+    .mobile-icons-container{
+        display: none;
+    } 
+    
+}
+@media only screen and (max-width: 767px) {  
+    .amount-contribution-details{
+        display: flex;
+        flex-direction: row;   
+    }
+    .transaction-section{
+        display: none;
+    }
+    .profile-container{
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    
+    }
+    
 }

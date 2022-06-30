@@ -1,12 +1,14 @@
 .third-section-app-container{
     background-color: #fff;
-    width: 100%;
+    width: 35vw;
     height: 100vh;
     background-size: cover;
-    padding-top: 20px;
 }
 .top-heading{
     margin-left: 50px;
+}
+.top-section-heading{
+    padding-top:25px ;
 }
 .progressbar{
     background: rgb(220, 211, 199);
@@ -61,10 +63,12 @@
 }
 .third-section-container{
     background-color: whitesmoke;
-    width: 70%;
+    width: 45vh;
     margin-left: 35px;
+    margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 10px;
    
 }
 .mobile-third-section-container{
@@ -113,4 +117,19 @@
     width: 110px;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+    .third-section-app-container{
+        background-color: #fff;
+        width: 90vw;
+        height: 100vh;
+        background-size: cover;
+        padding: 10px;
+        margin: 10px;
+    }
+    .third-section-container{
+        background-color: whitesmoke;
+        
+    }
 }

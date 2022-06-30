@@ -4,9 +4,8 @@ import { BsFillHouseFill,BsSearch,BsCardList,BsFillPersonFill,BsBellFill,BsBoxAr
 import { FaAddressCard } from "react-icons/fa";
 const Sidebar = () =>{ 
     return(
-    <div className="app-container ">
-        <div className="section-container d-none d-lg-block">
-         
+    <div className="sidebar-app-container ">
+        <div className="section-container">
                 <div className="top-icons-container">
                     <img src={butterfly} className='butterflyImg' alt="pic"/>
                     <BsSearch/>
@@ -18,7 +17,7 @@ const Sidebar = () =>{
                     <div className='icon'><BsFillPersonFill size={25}/></div>  
                 </div>      
         </div>
-        <div className="bottom-icons-container d-none d-lg-block">
+        <div className="bottom-icons-container">
             <div className='icon'><BsBellFill size={25}/></div>
             <div className='icon'><BsBoxArrowRight size={25}/></div>         
         </div>  

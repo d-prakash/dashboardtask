@@ -1,14 +1,12 @@
-.app-container{
+.sidebar-app-container{
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
-    margin-left: 5px;
     background-color: #fff;
-    margin-right: 1px;
-    width: 20v;
-
+    width: 5vw;
+    height: 100vh;
+    border-radius: 10px;
 }
 
 .icons-container{
@@ -49,6 +47,7 @@
 }
 .bottom-icons-container{
     margin-bottom: 5px;
+    margin-left: 15px;
 }
 .top-icons-container{
     display: flex;
@@ -57,3 +56,9 @@
     justify-content: center;
     padding-bottom: 70px;
 }
+
+@media only screen and (max-width: 767px) {  
+    .sidebar-app-container{
+        display: none;
+    } 
+}  
