@@ -4,8 +4,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    margin-left: 10px;
-    background-color: aliceblue;
+    margin-left: 5px;
+    background-color: #fff;
+    margin-right: 1px;
+    width: 20v;
 
 }
 
@@ -18,13 +20,17 @@
 }
 
 .butterflyImg{
-    height: 30px;
-    width: 25px;
+    height: 45px;
+    width: 40px;
     margin-bottom: 10px;
+    margin-right: 10px;
+    background: none;
 }
 .person-image{
     height: 100px;
     width: 100px;
+    background-color: #fff;
+
 }
 .section-container{
     display: flex;
@@ -33,7 +39,21 @@
     height: 30vh;
     margin-left: 10px;
 }
-.home{
+.home-icon{
     background: transparent;
     color: blue;
+    margin-bottom: 15px;
+}
+.icon{
+    margin-bottom: 15px;
+}
+.bottom-icons-container{
+    margin-bottom: 5px;
+}
+.top-icons-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+    padding-bottom: 70px;
 }

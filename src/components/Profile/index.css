@@ -1,91 +1,125 @@
-.with {
+.profile-container{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 10px;
+    width: 45vh;
+
+}
+
+.bio-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.week-day{
+    font-family: "Roboto";
     font-size: 15px;
-
-}
-
-
-.p12 {
-    font-size: 13px;
-}
-
-
-.number2 {
-    font-weight: 700;
-    font-size: 15px;
-
-}
-
-.amount {
-    font-weight: 700;
-    font-size: 20px;
-
-}
-
-.description {
-    font-family: "roboto";
-    font-size: 15px;
-}
-
-.today {
-    font-weight: 500;
-    font-family: "Bree Serif";
-    font-size: 20px;
-
-}
-
-.button{
-    width: 150px;
+    font-weight: 600;
+    color: rgb(90, 87, 87);
 }
 .person-name {
     font-family: "roboto";
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .profile-middle-section{
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-right: 60px;
+    margin-left: 40px;
 }
-
+.profile-bottom-section{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+.amount{
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 800;
+    
+}
+.description{
+    color: rgb(182, 177, 177);
+    font-size: 15px;
+}
 .person-image {
     height: 70px;
     width: 70px;
-    border-radius: 40px;
-}
-
-.column-bg-2 {
-    width: 25vw;
-    background-color: #efeff5;
-    padding: 10px;
-    padding-left: 30px;
-}
-
-.bg-container {
-    background-color: #e0e0eb;
-    background-size: cover;
-
-    padding: 5px;
-}
-
-.bg-container1 {
-    background-color: white;
-    border-radius: 20px;
-
-}
-
-.sm-bg {
-    background-color: white;
-    width: 5vw;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+    border-radius: 55px;
 }
 
 .butterfly {
     height: 25px;
     width: 25px;
     padding-right: 2px;
+}
+button{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    height: 36px;
+    border-radius: 5px;
+    width: 100px;
+}
+.mobile-button{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    height: 36px;
+    border-radius: 5px;
+    width: 150px;
+}
+.heading{
+    font-family: "Roboto";
+    font-size: 15px;
+}
+.horizontal-line{
+    border: 0.2px groove rgb(193, 193, 193);
+}
+
+.profile-mobile-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+
+.balance-details{
+    margin-left: 15px;
+    background: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+}
+.mobile-icons-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+.mobile-icon{
+    margin-right: 25px;
+}
+.mobile-home-icon{
+    margin-right: 22px;
+    margin-left: 10px;
+}
+.withdrawl-section{
+    margin-top: 25px;
+    margin-left: 15px;
+    padding: 15px;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+.mobile-button{
+    width: 200px;
+    margin-left: 10px;
 }

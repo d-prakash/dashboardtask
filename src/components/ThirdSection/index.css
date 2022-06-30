@@ -1,0 +1,116 @@
+.third-section-app-container{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 20px;
+}
+.top-heading{
+    margin-left: 50px;
+}
+.progressbar{
+    background: rgb(220, 211, 199);
+    width: 250px;
+    height: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.progressbar div{
+    height: 5px;
+    border-radius: 5px;
+    width: 50%;
+    background: blue;
+}
+.progressbar div span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+   
+}
+.sec-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressbarone{
+    background: rgb(220, 211, 199);
+    width: 250px;
+    height: 5px;
+    border-radius: 5px;
+}
+.progressbarone div{
+    height: 5px;
+    border-radius: 5px;
+    width: 70%;
+    background: blue;
+}
+.progressbarone div span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+   
+}
+.third-section-container{
+    background-color: whitesmoke;
+    width: 70%;
+    margin-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+.mobile-third-section-container{
+    background-color: whitesmoke;
+    width: 70%;
+    margin-left: 35px;
+    padding-top: 10px;
+   
+}
+.vertical-line {
+    border-left: 2px groove rgb(221, 226, 221);
+    height: 100px;
+    margin-right: 15px;
+  }
+
+.third-bottom-section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    padding-top: 20px;
+}
+
+.contribution-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+.percentage{
+    margin-top: 10px;
+    margin-left: 95px;
+}
+
+.contribution{
+    margin-bottom: 20px;
+}
+
+.third-section-bar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.third-section-circular-bar{
+    height: 100px;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+}

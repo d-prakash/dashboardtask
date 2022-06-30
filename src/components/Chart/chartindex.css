@@ -1,21 +1,75 @@
+.chart-section-container{
+    background-color: #fff;
+    width: 70vh;
+    height: 100vh;
+    background-size: cover;
 
-.circular-bar{
-    height: 120px;
-    width: 100px;
-    margin-right: 15px;
     
 }
-.bar-container{
-    display: flex;
-    flex-direction: row;
-    margin-left: 25px;
+
+.top-container{
+    margin-left: 40px;
+    margin-top: 25px;
 }
-.progressbar-section{
+.bottom-section-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.bottom-heading{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.circular-bar{
+    height: 100px;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+}
+
+.progressbar-section{
+    display: flex;
+    flex-direction: row;
 }
 .income-container{
     display: flex;
+}
+
+.contribution-container{
+    display: flex;
+    flex-direction: row;
+}
+.middle-section{
+    margin-left: 40px;
+}
+.span-dot{
+  height: 8px;
+  width: 15px;
+  background-color: rgb(41, 14, 149);
+  border-radius: 40%;
+  display: inline-block;
+  margin-right: 2px;
+}
+.heading{
+    font-size: 15px;
+}
+
+.horizontal-line{
+    border-top: 2px groove rgb(221, 226, 221);
+}
+
+
+.mobile-top-container{
+    margin-left: 40px;
+    margin-top: 25px;
 }
