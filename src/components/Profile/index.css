@@ -95,19 +95,6 @@ button{
     padding: 15px;
     border-radius: 10px;
 }
-.mobile-icons-container{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-    padding-left: 15px;
-}
-.mobile-icon{
-    margin-right: 15px;
-}
-.mobile-home-icon{
-    margin-right: 22px;
-    margin-left: 10px;
-}
 .withdrawl-section{
     margin-top: 25px;
     margin-left: 15px;
@@ -119,15 +106,20 @@ button{
     width: 200px;
     margin-left: 10px;
 }
+.description-md{
+    display: none;
+}
 
-
-@media only screen and (min-width: 767px) {  
+@media only screen and (min-width: 768px) {  
     .mobile-icons-container{
         display: none;
     } 
+    .bell-icon{
+        display: none;
+    }
     
 }
-@media only screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {  
     .amount-contribution-details{
         display: flex;
         flex-direction: row;   
@@ -136,12 +128,50 @@ button{
         display: none;
     }
     .profile-container{
-        background-color: whitesmoke;
+        background-color: #fff;
+        width: 90%;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        width: 100vw;
+        max-height: 80vh;
+        margin: 50px;
     
     }
+    .mobile-icons-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 95%;
+
+
+    }
     
+    .bell-icon{
+        align-self: flex-end;
+       
+    }
+    .description{
+        color: rgb(182, 177, 177);
+        font-size: 10px;
+        margin-right: 5px;
+
+    }
+    .amount{
+        font-size: 12px;
+    }
+    .heading{
+        font-size: 10px;
+    }
+
+    .trans-section,.profile-bottom-section{
+        background-color: whitesmoke;
+        padding: 20px;
+        width: 80%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+
+    }
 }

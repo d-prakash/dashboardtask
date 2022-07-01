@@ -32,18 +32,18 @@ const ThirdSection = () =>{
             <div className='third-section-container'>
                 <h3 className='top-heading'>Retirement Strategy</h3>
                 <p className='top-heading'>Employee Contribution</p>
-                <div className='sec-container ml-4'>
-                    <div className="progressbar ml-5">
+                <div className='sec-container '>
+                    <div className="progressbar ">
                         <div className="" ><span></span></div>  
                     </div>
                     <p className='description'>12%</p>
                 </div>
                 <p className='top-heading'>Retirement age</p>
-                <div className='sec-container ml-2'>
-                    <div className="progressbarone ml-5">
+                <div className='sec-container'>
+                    <div className="progressbarone">
                         <div className="" ><span></span></div>
                     </div>
-                    <p className='description ml-2 mt-2'>65</p>
+                    <p className='description '>65</p>
                 </div>
                 <hr/>
                 <div className='contribution'>
@@ -55,8 +55,8 @@ const ThirdSection = () =>{
                         <h5>Interest rate</h5>
                         <p style={{marginLeft:"165px"}} className='percentage'>5%</p>
                     </div>
-                    <button style={{width:"325px",textAlign:"center",marginLeft:"1px",borderRadius:"15px"}} className='btn btn-primary d-lg-none'>Update</button>
-                    <button style={{width:"250px",textAlign:"center",marginLeft:"50px",borderRadius:"15px"}} className='btn btn-primary d-none d-lg-block'>Update</button>
+                    <button style={{width:"100%",textAlign:"center",borderRadius:"15px"}} className='btn btn-primary d-lg-none'>Update</button>
+                    <button style={{width:"20px",textAlign:"center",borderRadius:"15px"}} className='btn btn-primary d-none d-lg-block'>Update</button>
                     <p className='text-center text-primary d-none d-lg-block m-3'>View Help Docs<span><BsChevronRight/></span></p>
                 </div>
             </div>

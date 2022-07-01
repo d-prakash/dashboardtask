@@ -35,6 +35,10 @@
     align-items: center;
 }
 
+.amount{
+    font-size: 18px;
+}
+
 .bar-container{
     display: flex;
     flex-direction: row;
@@ -87,8 +91,42 @@
     }
     .chart-section-container{
         background-color: #fff;
-        height: 100vh;
         background-size: cover;
-        width: 70vw;    
+        width: 90%;    
+        height: 80vh;
+        margin-top: 35px;
+        margin-bottom: 40px;
+        margin: 50px;
+        border-radius: 10px;
+        
+    }
+    .bell-icon{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        justify-content: flex-end;
+        margin: 10px;
+
+    }
+    .bottom-heading{
+        font-size: 18px;
+    }
+    .amount{
+        font-size: 12px;
+    }
+    .bottem-section-heading{
+        font-size: 5px;
+    }
+    .progressbar-section{
+        height: 300px;
+    }
+    .bar-container{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) { 
+    .bell-icon{
+        display: none;
     }
 }

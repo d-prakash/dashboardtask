@@ -1,12 +1,12 @@
 import { FaCaretDown } from "react-icons/fa";
 import person from '../../assets/images/person.jpeg'
-import { BsFillHouseFill,BsSearch,BsCardList,BsFillPersonFill } from 'react-icons/bs';
-import { FaAddressCard } from "react-icons/fa";
+import { BsBellFill } from 'react-icons/bs';
 import './index.css'
+import IconsContainer from "../IconsContainer";
 const Profile = () =>{
     return(
-        <>
-            <div className="profile-container ">
+          <div className="profile-container">
+            <div className='bell-icon'><BsBellFill size={20}/></div>
                 <div className="bio-section">
                     <img src={person} className="person-image" alt="person"/>
                     <div className="d-flex flex-column p-2">
@@ -14,7 +14,7 @@ const Profile = () =>{
                         <p className="description">welcome back</p>
                     </div>
                 </div>
-                <div className="profile-middle-section">
+                <div className="profile-middle-section trans-section">
                     <p className="week-day">Today</p>
                     <h1 className="amount" style={{fontSize:"25px"}}>$19,892</h1>
                     <p className="description">Account Balance</p>
@@ -22,7 +22,7 @@ const Profile = () =>{
                         <div>
                             <h1 className="amount">$4,000</h1>
                             <p className="description d-none d-lg-block">Year-to-Date Contribution</p>
-                            <p className="description  d-md-block">Year-to-Date </p>
+                            <p className="description-md">Year-to-Date </p>
                         </div>
                         <div>
                             <h1 className="amount">$1,892</h1>
@@ -38,6 +38,7 @@ const Profile = () =>{
                         <p className="heading">Withdrawl Transfer to Bank-XXX11</p>
                         <hr className="horizontal-line "/>
                     </div>
+                    </div>
                     <div className="transaction-section">
                         <div>
                             <p className="description">2020-08-07</p>
@@ -49,22 +50,9 @@ const Profile = () =>{
                             <p className="heading">Withdrawl Transfer to Bank-XXX11</p>
                             <hr className="horizontal-line"/>
                         </div>
-                    </div>
                 </div>
-
-                <div className="mobile-icons-container" >
-                    <div className='mobile-home-icon'><BsFillHouseFill size={25}/></div>
-                    <div className='mobile-icon'><BsCardList size={25}/></div>
-                    <div className='mobile-icon'><FaAddressCard size={25}/></div>
-                    <div className='mobile-icon'><BsFillPersonFill size={25}/></div> 
-                    <div className='mobile-icon'><BsSearch size={25}/></div> 
-                </div>
-
+                <IconsContainer />
             </div>
-           
-
-         </>
-
     )
 }
 

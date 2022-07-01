@@ -2,7 +2,6 @@
     background-color: #fff;
     width: 35vw;
     height: 100vh;
-    background-size: cover;
 }
 .top-heading{
     margin-left: 50px;
@@ -64,7 +63,6 @@
 .third-section-container{
     background-color: whitesmoke;
     width: 45vh;
-    margin-left: 35px;
     margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -121,15 +119,21 @@
 
 @media only screen and (max-width: 767px) {
     .third-section-app-container{
-        background-color: #fff;
-        width: 90vw;
-        height: 100vh;
-        background-size: cover;
+        width: 100%;
+        margin: 0;
         padding: 10px;
-        margin: 10px;
+
+    }
+    .third-section-circular-bar{
+        height: 60%;
+        width: 80%;
+
     }
     .third-section-container{
-        background-color: whitesmoke;
-        
+        width: 90%;
+        border-radius: 10px;
+    }
+    .third-section-bar-container{
+        width: 80%;
     }
 }

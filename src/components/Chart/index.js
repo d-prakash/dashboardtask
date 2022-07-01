@@ -1,13 +1,13 @@
 import React from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
-import { BsFillHouseFill,BsSearch,BsCardList,BsFillPersonFill } from 'react-icons/bs';
-import { FaAddressCard } from "react-icons/fa";
+import { BsBellFill } from 'react-icons/bs';
 import 'react-circular-progressbar/dist/styles.css';
 import { FaCaretDown } from "react-icons/fa";
 import { BarChart, Bar, XAxis, YAxis,
 	CartesianGrid,ResponsiveContainer } from 'recharts';
 
 import './index.css'
+import IconsContainer from '../IconsContainer';
 
 const Chart = () => {
 
@@ -38,25 +38,25 @@ const Chart = () => {
 		{ name: '60', x: 40, y: 40, z: 40 },
 	];
 	return (
-		<>
 	  <div className='chart-section-container'>
+	  	<div className='bell-icon'><BsBellFill size={20}/></div>
 		<div className='d-flex flex-column top-container'>
 			<p style={{fontSize:"12px",fontWeight:500,color:'blue'}}>Retirement Income</p>
 			<p style={{fontSize:"20px",fontWeight:500}}>Starting Year 2056</p>
 			<div className='income-details-container'>
 				<div className='mr-4'>
-					<p className='amount' style={{fontSize:"25px"}}>$300,000</p>
+					<p className='amount' style={{fontSize:"12px"}}>$300,000</p>
 					<p>My Goal</p>
 					<hr className='horizontal-line'/>
 				</div>
 				<div className='income-container'>
 					<div className='mr-4'>
-						<p className='amount'style={{fontSize:"25px"}}>59%</p>
+						<p className='amount'style={{fontSize:"12px"}}>59%</p>
 						<p>Goal Achieved</p>
 						<hr className='horizontal-line'/>
 					</div>
 					<div className='ml-4'>
-						<p className='amount' style={{fontSize:"25px"}}>$300</p>
+						<p className='amount' style={{fontSize:"12px"}}>$300</p>
 						<p>Est. Monthly Income</p>
 						<hr className='horizontal-line'/>
 					</div>
@@ -74,17 +74,17 @@ const Chart = () => {
 			</div>
 			<div className='d-lg-none'>
 				<div className='d-flex flex-row'>
-					<div style={{fontSize:"13px",marginRight:"13px"}}>
+					<div style={{fontSize:"10px",marginRight:"10px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
 						<p><span>Employer: </span></p>
 						<p>K 73,500</p>
 					</div>
-					<div style={{fontSize:"13px",marginRight:"13px"}}>
+					<div style={{fontSize:"10px",marginRight:"10px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
 						<p><span>Employee: </span></p>
 						<p>K 52,500</p>
 					</div>
-					<div style={{fontSize:"13px",marginRight:"13px"}}>
+					<div style={{fontSize:"10px",marginRight:"10px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
 						<p><span>Total Interest: </span></p>
 						<p>K 244,313</p>
@@ -102,7 +102,7 @@ const Chart = () => {
 				</BarChart>
 			</div>
 			<div className='d-lg-none text-center'>
-			<ResponsiveContainer width={220} height={170}>
+			<ResponsiveContainer width={250} height={140}>
 				<BarChart  data={updatedData} >
 				<CartesianGrid />
 					<XAxis dataKey="name" />
@@ -122,11 +122,11 @@ const Chart = () => {
 			<p className='description'>These numbers represent current goal achievement</p>
 			<div className='progressbar-section'>
 				<div>
-					<p className='heading'>Age: Under 30 <FaCaretDown/></p>
+					<p className='bottem-section-heading'>Age: Under 30 <FaCaretDown/></p>
 					<hr/>
-					<p className='heading'>Salary: K 20 - K 30 <FaCaretDown/></p>
+					<p className='bottem-section-heading'>Salary: K 20 - K 30 <FaCaretDown/></p>
 					<hr/>
-					<p className='heading'>Gender: Male <FaCaretDown/></p>
+					<p className='bottem-section-heading'>Gender: Male <FaCaretDown/></p>
 					<hr/>
 				</div>
 				<div className='bar-container'>
@@ -141,18 +141,8 @@ const Chart = () => {
 		</div>
 		
 		</div>
-		<div className='d-lg-none'>
-			<div className="mobile-icons-container" >
-						<div className='mobile-home-icon'><BsFillHouseFill size={25}/></div>
-						<div className='mobile-icon'><BsCardList size={25}/></div>
-						<div className='mobile-icon'><FaAddressCard size={25}/></div>
-						<div className='mobile-icon'><BsFillPersonFill size={25}/></div>  
-						<div className='mobile-icon'><BsSearch size={25}/></div>
-					</div>
-			</div>
+		<IconsContainer />
 		</div>
-		
-		</>
 	);
 }
 
