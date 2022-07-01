@@ -96,7 +96,6 @@
 .third-bottom-section{
     display: flex;
     flex-direction: row;
-    margin-left: 40px;
     padding-top: 20px;
 }
 

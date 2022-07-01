@@ -49,10 +49,10 @@ const ThirdSection = () =>{
                     <h5>Interest rate <span className='interst-percentage mr-4'>5%</span></h5>
                 </div>
                 <div>
-                <button className='btn btn-primary lg-button d-lg-none'>Update</button>
-                    <button style={{width:"200px",textAlign:"center",borderRadius:"15px",marginLeft:"20px",marginTop:"20px"}} className='btn btn-primary d-none d-lg-block'>Updated</button>
-                    <p className='text-center text-primary d-none d-lg-block m-3'>View Help Docs<span><BsChevronRight/></span></p>
+                <button className='btn btn-primary text-center lg-button d-lg-none'>Update</button>
+                    <button style={{width:"200px",textAlign:"center",borderRadius:"10px",marginLeft:"60px",marginTop:"20px"}} className='btn btn-primary d-none d-lg-block'>Update</button>
                 </div>
+                <p className='text-center text-primary d-none d-lg-block m-3'>View Help Docs<span><BsChevronRight/></span></p>
             </div>
             <div className='d-lg-block ml-4 d-none'>
                <div className='third-bottom-section '>
