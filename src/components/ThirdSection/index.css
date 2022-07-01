@@ -6,16 +6,15 @@
 .top-heading{
     margin-left: 50px;
 }
-.top-section-heading{
-    padding-top:25px ;
-}
+
 .progressbar{
     background: rgb(220, 211, 199);
-    width: 250px;
+    width: 200px;
     height: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
     margin-top: 10px;
+    margin-left: 22px;
 }
 .progressbar div{
     height: 5px;
@@ -35,14 +34,16 @@
 }
 .sec-container{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 .progressbarone{
     background: rgb(220, 211, 199);
-    width: 250px;
+    width: 200px;
     height: 5px;
     border-radius: 5px;
+    margin-left: 20px;
 }
 .progressbarone div{
     height: 5px;
@@ -60,21 +61,31 @@
     margin-right: -20px;
    
 }
+.interst-percentage{
+    margin-left: 170px;
+}
 .third-section-container{
     background-color: whitesmoke;
-    width: 45vh;
-    margin-top: 50px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
     border-radius: 10px;
+    margin-top: 30px;
+    width: 65%;
+    height: 50%;
    
 }
-.mobile-third-section-container{
+.mobile-third-section-containr{
     background-color: whitesmoke;
     width: 70%;
     margin-left: 35px;
     padding-top: 10px;
    
+}
+.contribution{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
 }
 .vertical-line {
     border-left: 2px groove rgb(221, 226, 221);
@@ -100,10 +111,6 @@
     margin-left: 95px;
 }
 
-.contribution{
-    margin-bottom: 20px;
-}
-
 .third-section-bar-container{
     display: flex;
     flex-direction: row;
@@ -117,23 +124,69 @@
     flex-direction: column;
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .third-section-app-container{
-        width: 100%;
+        width: 90%;
         margin: 0;
-        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85%;
+        margin-left: 25px;
+        margin-right:15px ;
 
     }
+    .close-button{
+        display: flex;
+        align-self: flex-end;
+        margin: 10px;
+    }
     .third-section-circular-bar{
-        height: 60%;
-        width: 80%;
+        height: 90px;
+        width: 100px;
+        margin-top: 10px;
 
     }
     .third-section-container{
-        width: 90%;
-        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
     }
     .third-section-bar-container{
         width: 80%;
+        margin-top: 70px;
+        margin-left: 30px;
     }
+    .description-percentage{
+        background-color: #fff;
+
+    }
+    .contribution{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin-left: 45px;
+    }
+    .interst-percentage{
+        margin-left: 170px;
+    }
+    .section-container{
+        margin-left: 20px;
+    }
+    .lg-button{
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+.top-section-container{
+    display: none;
+}
+.third-section-container{
+    margin-left: 60px;
+}
 }

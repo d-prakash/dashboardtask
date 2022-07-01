@@ -41,23 +41,33 @@ const Chart = () => {
 	  <div className='chart-section-container'>
 	  	<div className='bell-icon'><BsBellFill size={20}/></div>
 		<div className='d-flex flex-column top-container'>
-			<p style={{fontSize:"12px",fontWeight:500,color:'blue'}}>Retirement Income</p>
+			<p style={{fontSize:"18px",fontWeight:500,color:'blue'}}>Retirement Income</p>
 			<p style={{fontSize:"20px",fontWeight:500}}>Starting Year 2056</p>
 			<div className='income-details-container'>
-				<div className='mr-4'>
-					<p className='amount' style={{fontSize:"12px"}}>$300,000</p>
-					<p>My Goal</p>
+				<div className='income-container-one mr-4'>
+					<p className='amount' style={{fontSize:"18px"}}>$300,000</p>
+					<p className='heading'>My Goal</p>
 					<hr className='horizontal-line'/>
 				</div>
-				<div className='income-container'>
+				<div className='mr-4 d-none d-lg-block'>
+						<p className='amount'style={{fontSize:"18px"}}>59%</p>
+						<p className='heading'>Goal Achieved</p>
+						<hr className='horizontal-line'/>
+					</div>
+					<div className='ml-4 d-none d-lg-block'>
+						<p className='amount' style={{fontSize:"18px"}}>K 300</p>
+						<p className='heading'>Est. Monthly Income</p>
+						<hr className='horizontal-line'/>
+					</div>
+				<div className='income-container d-flex flex-row'>
 					<div className='mr-4'>
-						<p className='amount'style={{fontSize:"12px"}}>59%</p>
-						<p>Goal Achieved</p>
+						<p className='amount'style={{fontSize:"18px"}}>59%</p>
+						<p className='heading'>Goal Achieved</p>
 						<hr className='horizontal-line'/>
 					</div>
 					<div className='ml-4'>
-						<p className='amount' style={{fontSize:"12px"}}>$300</p>
-						<p>Est. Monthly Income</p>
+						<p className='amount' style={{fontSize:"18px"}}>$300</p>
+						<p className='heading'>Est. Monthly Income</p>
 						<hr className='horizontal-line'/>
 					</div>
 				</div>

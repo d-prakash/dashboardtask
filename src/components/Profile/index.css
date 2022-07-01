@@ -2,8 +2,8 @@
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 22vw;
+    min-height: 100vh;
+    width: 25vw;
 }
 
 .bio-section{
@@ -31,8 +31,7 @@
     margin-left: 40px;
 }
 .profile-bottom-section{
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin-top: 45px;
     margin-left: 40px;
     margin-right: 60px;
 }
@@ -75,12 +74,16 @@ button{
 }
 .heading{
     font-family: "Roboto";
-    font-size: 15px;
+    font-size: 12px;
 }
 .horizontal-line{
     border: 0.2px groove rgb(193, 193, 193);
 }
 
+.transaction-section{
+   width: 75%;
+   margin-left: 45px;
+}
 .profile-mobile-container{
     background-color: #fff;
     display: flex;
@@ -106,9 +109,6 @@ button{
     width: 200px;
     margin-left: 10px;
 }
-.description-md{
-    display: none;
-}
 
 @media only screen and (min-width: 768px) {  
     .mobile-icons-container{
@@ -122,10 +122,21 @@ button{
 @media screen and (max-width: 767px) {  
     .amount-contribution-details{
         display: flex;
-        flex-direction: row;   
+        flex-direction: row;  
+        justify-content: space-between; 
+        width: 70%;
+    }
+    .button-container{
+        margin-left: 50px;
+        width: 50%;
     }
     .transaction-section{
         display: none;
+    }
+    .profile-bottom-section{
+        margin-top: 45px;
+        margin-left: 40px;
+        margin-bottom: 40px;
     }
     .profile-container{
         background-color: #fff;
@@ -133,8 +144,8 @@ button{
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        max-height: 80vh;
-        margin: 50px;
+        max-height: 70vh;
+        margin-left: 20px;
     
     }
     .mobile-icons-container{
@@ -166,12 +177,11 @@ button{
     .trans-section,.profile-bottom-section{
         background-color: whitesmoke;
         padding: 20px;
-        width: 80%;
+        width: 75%;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
 
     }
 }

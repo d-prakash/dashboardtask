@@ -1,18 +1,21 @@
 .chart-section-container{
     background-color: #fff;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-size: cover;
     width: 35vw;    
 }
-.income-container {
-    display: flex;
-    flex-direction: row;
-}
+
 .income-details-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
 }
-
+.heading{
+    color: rgb(90, 87, 87);
+}
 .top-container{
     margin-left: 40px;
     margin-top: 25px;
@@ -50,9 +53,6 @@
 .progressbar-section{
     display: flex;
     flex-direction: row;
-}
-.income-container{
-    display: flex;
 }
 
 .contribution-container{
@@ -93,11 +93,11 @@
         background-color: #fff;
         background-size: cover;
         width: 90%;    
-        height: 80vh;
+        height: 90%;
         margin-top: 35px;
-        margin-bottom: 40px;
-        margin: 50px;
+        margin: 30px;
         border-radius: 10px;
+        padding-bottom: 35px;
         
     }
     .bell-icon{
@@ -123,10 +123,16 @@
     .bar-container{
         width: 80%;
     }
+    .income-container-price{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) { 
     .bell-icon{
+        display: none;
+    }
+    .income-container {
         display: none;
     }
 }
