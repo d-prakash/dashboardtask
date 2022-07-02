@@ -28,7 +28,7 @@ const ThirdSection = () =>{
                     </div>
             </div>
 		    
-            <div className='third-section-container'>
+            <div className='third-section-container '>
                 <h3 className='top-heading'>Retirement Strategy</h3>
                 <p className='top-heading'>Employee Contribution</p>
                 <div className='sec-container '>
@@ -53,7 +53,7 @@ const ThirdSection = () =>{
                 <button className='btn btn-primary text-center lg-button d-lg-none'>Update</button>
                     <button style={{width:"200px",textAlign:"center",borderRadius:"10px",marginLeft:"60px",marginTop:"20px"}} className='btn btn-primary d-none d-lg-block'>Update</button>
                 </div>
-                <p className='text-center text-primary d-none d-lg-block m-3'>View Help Docs<span><BsChevronRight/></span></p>
+                <p className='text-center text-primary d-none d-lg-block m-2'>View Help Docs<span><BsChevronRight/></span></p>
             </div>
             <div className='d-lg-block ml-4 d-none'>
                <div className='third-bottom-section'>
