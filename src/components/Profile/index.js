@@ -39,19 +39,19 @@ const Profile = () =>{
                     <div>
                         <p className="description">2020-08-07</p>
                         <p className="heading font-weight-bold">Withdrawl Transfer to Bank-XXX11</p>
-                        <hr className="horizontal-line "/>
+                        <hr/>
                     </div>
                 </div>
                 <div className="transaction-section">
                     <div>
                         <p className="description">2020-07-21</p>
                         <p className="heading">Withdrawl Transfer to Bank-XXX11</p>
-                        <hr className="horizontal-line"/>
+                        <hr/>
                     </div>
                     <div>
                         <p className="description">2020-07-16</p>
                         <p className="heading">Withdrawl Transfer to Bank-XXX11</p>
-                        <hr className="horizontal-line"/>
+                        <hr/>
                     </div>
                 </div>
                 <IconsContainer />

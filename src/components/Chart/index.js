@@ -41,34 +41,34 @@ const Chart = () => {
 	  <div className='chart-section-container'>
 	  	<div className='bell-icon'><BsBellFill size={20}/></div>
 		<div className='d-flex flex-column top-container'>
-			<p style={{fontSize:"18px",fontWeight:500,color:'blue'}}>Retirement Income</p>
+			<p style={{fontSize:"15px",fontWeight:500,color:'blue'}}>Retirement Income</p>
 			<p style={{fontSize:"20px",fontWeight:500}}>Starting Year 2056</p>
-			<div className='income-details-container'>
+			<div className='income-details-container mt-3'>
 				<div className='income-container-one mr-4'>
 					<p className='amount' style={{fontSize:"18px"}}>$300,000</p>
 					<p className='desc-heading'>My Goal</p>
-					<hr className='horizontal-line'/>
+					<hr/>
 				</div>
 				<div className='mr-4 d-none d-lg-block'>
 						<p className='amount'style={{fontSize:"18px"}}>59%</p>
 						<p className='desc-heading'>Goal Achieved</p>
-						<hr className='horizontal-line'/>
+						<hr/>
 					</div>
 					<div className='ml-4 d-none d-lg-block'>
-						<p className='amount' style={{fontSize:"18px"}}>K 300</p>
+						<p className='amount' style={{fontSize:"18px"}}>$ 300</p>
 						<p className='desc-heading'>Est. Monthly Income</p>
-						<hr className='horizontal-line'/>
+						<hr/>
 					</div>
 				<div className='income-container'>
 					<div className='mr-4'>
 						<p className='amount'style={{fontSize:"18px"}}>59%</p>
 						<p className='desc-heading'>Goal Achieved</p>
-						<hr className='horizontal-line'/>
+						<hr/>
 					</div>
 					<div className='ml-4'>
 						<p className='amount' style={{fontSize:"18px"}}>K 300</p>
 						<p className='desc-heading'>Est. Monthly Income</p>
-						<hr className='horizontal-line'/>
+						<hr/>
 					</div>
 				</div>
 			</div>
@@ -77,26 +77,26 @@ const Chart = () => {
 			<h1 className='bottom-heading'>Contributions Overtime</h1>
 			<div className='d-lg-block d-none'>
 				<div className='contribution-container'>
-					<p style={{fontSize:"13px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span><span>Employer: </span>K 73,500</p>
-					<p style={{fontSize:"13px",marginRight:"7px"}}><span style={{backgroundColor:'#4d44b7'}} className='span-dot'></span><span>Employee: </span>K 52,500</p>
-					<p style={{fontSize:"13px"}}><span style={{backgroundColor:'#7eb6d9'}} className='span-dot'></span><span>Total Interest: </span>K 244,313</p>
+					<p style={{fontSize:"13px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span><span className='contribution-heading'>Employer: </span>K 73,500</p>
+					<p style={{fontSize:"13px",marginRight:"7px"}}><span style={{backgroundColor:'#4d44b7'}} className='span-dot'></span><span className='contribution-heading'>Employee: </span>K 52,500</p>
+					<p style={{fontSize:"13px"}}><span style={{backgroundColor:'#7eb6d9'}} className='span-dot'></span><span className='contribution-heading'>Total Interest: </span>K 244,313</p>
 				</div>
 			</div>
 			<div className='d-lg-none'>
 				<div className='contributions-container'>
 					<div style={{fontSize:"13px",marginRight:"18px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
-						<p className='heading'><span>Employer: </span></p>
+						<p ><span className='contribution-heading'>Employer: </span></p>
 						<p className='amount'>K 73,500</p>
 					</div>
 					<div style={{fontSize:"13px",marginRight:"18px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
-						<p className='heading'><span>Employee: </span></p>
+						<p ><span className='contribution-heading'>Employee: </span></p>
 						<p className='amount'>K 52,500</p>
 					</div>
 					<div style={{fontSize:"13px",marginRight:"13px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
-						<p className='heading'><span>Total Interest: </span></p>
+						<p><span  className='contribution-heading'>Total Interest: </span></p>
 						<p className='amount'>K 244,313</p>
 					</div>
 				</div>
@@ -128,7 +128,7 @@ const Chart = () => {
 		
 		<div className='d-lg-block d-none'>
 		<div className='bottom-section-container'>
-			<h1 className='bottom-heading'>How do I compare my peers?</h1>
+			<h1 className='bottom-heading font-weight-bold'>How do I compare my peers?</h1>
 			<p className='description'>These numbers represent current goal achievement</p>
 			<div className='progressbar-section'>
 				<div>

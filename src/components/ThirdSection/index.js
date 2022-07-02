@@ -44,6 +44,7 @@ const ThirdSection = () =>{
                     </div>
                     <p className='description-percentage'>65</p>
                 </div>
+                <hr/>
                 <div className='contribution'>
                     <h5>Employer Contribution <span className='percentage'>8.4%</span></h5>
                     <h5>Interest rate <span className='interst-percentage mr-4'>5%</span></h5>

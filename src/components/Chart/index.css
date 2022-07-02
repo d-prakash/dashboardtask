@@ -75,11 +75,15 @@
 .heading{
     font-size: 15px;
 }
-
-.horizontal-line{
-    border-top: 2px groove rgb(221, 226, 221);
+.contribution-heading{
+    color: rgb(182, 177, 177);
 }
 
+
+.desc-heading{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(182, 177, 177);
+}
 
 .mobile-top-container{
     margin-left: 40px;
@@ -133,7 +137,8 @@
     }
     .desc-heading{
         font-size: 13px;
-        color: rgb(182, 177, 177);;
+        font-weight: bolder;
+        color: rgb(182, 177, 177);
     }
     .contributions-container{
         display: flex;
