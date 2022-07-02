@@ -37,7 +37,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.income-container{
+    display: none;
+}
 .amount{
     font-size: 18px;
 }
@@ -125,6 +127,18 @@
     }
     .income-container-price{
         display: none;
+    }
+    .income-container{
+        display: flex;
+    }
+    .desc-heading{
+        font-size: 13px;
+        color: rgb(182, 177, 177);;
+    }
+    .contributions-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 

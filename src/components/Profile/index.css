@@ -21,7 +21,7 @@
 }
 .person-name {
     font-family: "roboto";
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -43,7 +43,7 @@
 }
 .description{
     color: rgb(182, 177, 177);
-    font-size: 15px;
+    font-size: 12px;
 }
 .person-image {
     height: 70px;
@@ -77,7 +77,7 @@ button{
     font-size: 12px;
 }
 .horizontal-line{
-    border: 0.2px groove rgb(193, 193, 193);
+    border-top: 0.1px groove rgb(135, 38, 38);
 }
 
 .transaction-section{

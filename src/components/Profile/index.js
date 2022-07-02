@@ -1,5 +1,5 @@
 import { FaCaretDown } from "react-icons/fa";
-import person from '../../assets/images/person.jpeg'
+import Programmer from '../../assets/images/Programmer.jpg'
 import { BsBellFill } from 'react-icons/bs';
 import './index.css'
 import IconsContainer from "../IconsContainer";
@@ -8,10 +8,10 @@ const Profile = () =>{
           <div className="profile-container">
             <div className='bell-icon'><BsBellFill size={20}/></div>
                 <div className="bio-section">
-                    <img src={person} className="person-image" alt="person"/>
+                    <img src={Programmer} className="person-image" alt="person"/>
                     <div className="d-flex flex-column p-4">
                         <h3 className="person-name font-weight-bold">Hi Mike,</h3>
-                        <p className="description">welcome back</p>
+                        <p className="description">welcome back.</p>
                     </div>
                 </div>
                 <div className="profile-middle-section trans-section">
@@ -44,12 +44,12 @@ const Profile = () =>{
                 </div>
                 <div className="transaction-section">
                     <div>
-                        <p className="description">2020-08-07</p>
+                        <p className="description">2020-07-21</p>
                         <p className="heading">Withdrawl Transfer to Bank-XXX11</p>
                         <hr className="horizontal-line"/>
                     </div>
                     <div>
-                        <p className="description">2020-08-07</p>
+                        <p className="description">2020-07-16</p>
                         <p className="heading">Withdrawl Transfer to Bank-XXX11</p>
                         <hr className="horizontal-line"/>
                     </div>

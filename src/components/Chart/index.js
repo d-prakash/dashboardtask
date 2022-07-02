@@ -46,28 +46,28 @@ const Chart = () => {
 			<div className='income-details-container'>
 				<div className='income-container-one mr-4'>
 					<p className='amount' style={{fontSize:"18px"}}>$300,000</p>
-					<p className='heading'>My Goal</p>
+					<p className='desc-heading'>My Goal</p>
 					<hr className='horizontal-line'/>
 				</div>
 				<div className='mr-4 d-none d-lg-block'>
 						<p className='amount'style={{fontSize:"18px"}}>59%</p>
-						<p className='heading'>Goal Achieved</p>
+						<p className='desc-heading'>Goal Achieved</p>
 						<hr className='horizontal-line'/>
 					</div>
 					<div className='ml-4 d-none d-lg-block'>
 						<p className='amount' style={{fontSize:"18px"}}>K 300</p>
-						<p className='heading'>Est. Monthly Income</p>
+						<p className='desc-heading'>Est. Monthly Income</p>
 						<hr className='horizontal-line'/>
 					</div>
-				<div className='income-container d-flex flex-row'>
+				<div className='income-container'>
 					<div className='mr-4'>
 						<p className='amount'style={{fontSize:"18px"}}>59%</p>
-						<p className='heading'>Goal Achieved</p>
+						<p className='desc-heading'>Goal Achieved</p>
 						<hr className='horizontal-line'/>
 					</div>
 					<div className='ml-4'>
-						<p className='amount' style={{fontSize:"18px"}}>$300</p>
-						<p className='heading'>Est. Monthly Income</p>
+						<p className='amount' style={{fontSize:"18px"}}>K 300</p>
+						<p className='desc-heading'>Est. Monthly Income</p>
 						<hr className='horizontal-line'/>
 					</div>
 				</div>
@@ -83,21 +83,21 @@ const Chart = () => {
 				</div>
 			</div>
 			<div className='d-lg-none'>
-				<div className='d-flex flex-row'>
-					<div style={{fontSize:"10px",marginRight:"10px"}}>
+				<div className='contributions-container'>
+					<div style={{fontSize:"13px",marginRight:"18px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
-						<p><span>Employer: </span></p>
-						<p>K 73,500</p>
+						<p className='heading'><span>Employer: </span></p>
+						<p className='amount'>K 73,500</p>
 					</div>
-					<div style={{fontSize:"10px",marginRight:"10px"}}>
+					<div style={{fontSize:"13px",marginRight:"18px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
-						<p><span>Employee: </span></p>
-						<p>K 52,500</p>
+						<p className='heading'><span>Employee: </span></p>
+						<p className='amount'>K 52,500</p>
 					</div>
-					<div style={{fontSize:"10px",marginRight:"10px"}}>
+					<div style={{fontSize:"13px",marginRight:"13px"}}>
 						<p style={{fontSize:"9px",marginRight:"7px"}}><span style={{backgroundColor:'#2e20d7'}} className='span-dot' ></span></p>
-						<p><span>Total Interest: </span></p>
-						<p>K 244,313</p>
+						<p className='heading'><span>Total Interest: </span></p>
+						<p className='amount'>K 244,313</p>
 					</div>
 				</div>
 			</div>

@@ -55,7 +55,7 @@ const ThirdSection = () =>{
                 <p className='text-center text-primary d-none d-lg-block m-3'>View Help Docs<span><BsChevronRight/></span></p>
             </div>
             <div className='d-lg-block ml-4 d-none'>
-               <div className='third-bottom-section '>
+               <div className='third-bottom-section'>
                 <div className="vertical-line"></div>
                 <div>
                     <p>Are Considering a</p>
